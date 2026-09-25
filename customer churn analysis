@@ -1,0 +1,80 @@
+# Customer Churn Analysis for Telecom Industry
+
+## Project Overview
+
+Customer churn is a major challenge in the telecom industry. This project analyzes telecom customer data to understand churn patterns, predict customers with a higher probability of leaving, and segment customers into meaningful risk groups.
+
+The project follows an end-to-end Data Analytics and Machine Learning workflow using Python, Exploratory Data Analysis (EDA), Logistic Regression, SHAP explainability, and customer segmentation.
+
+---
+
+## Objectives
+
+- Analyze customer churn patterns.
+- Identify customer characteristics associated with churn.
+- Build a binary classification model to predict churn.
+- Calculate individual customer churn probabilities.
+- Identify high-risk customers.
+- Segment customers into **At Risk, Loyal, and Dormant** groups.
+- Use SHAP to understand important model features.
+- Provide practical customer-retention recommendations.
+
+---
+
+## Dataset
+
+**Dataset:** Telco Customer Churn Dataset
+
+The dataset contains customer information such as:
+
+- Customer tenure
+- Contract type
+- Internet service
+- Payment method
+- Monthly charges
+- Total charges
+- Technical support
+- Online services
+- Customer demographics
+- Churn status
+
+### Dataset Limitation
+
+The original task mentions fields such as call duration, complaints, and recharge frequency. These exact fields are not available in the selected public dataset.
+
+Therefore, the project uses the available telecom customer features for analysis and prediction.
+
+---
+
+## Tools & Technologies
+
+- Python
+- Google Colab
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- SHAP
+- Logistic Regression
+
+---
+
+## Project Workflow
+
+### 1. Data Loading
+
+The Telco Customer Churn dataset was loaded into Python using Pandas.
+
+### 2. Data Cleaning
+
+The following preprocessing steps were performed:
+
+- Converted `TotalCharges` into numeric format.
+- Handled missing values.
+- Removed duplicate records.
+- Converted `Churn` from Yes/No into binary values.
+
+```text
+1 = Churn
+0 = No Churn
